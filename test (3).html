@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>三個 YouTube 影片平分畫面</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      height: 100vh; /* 讓 container 撐滿整個畫面高度 */
+    }
+    .video {
+      flex: 1; /* 三個平分 */
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/Nrz-uQdijNo?autoplay=1&mute=1" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/QviXe8xvA50?autoplay=1&mute=1" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/XPsbhPHAdv4?autoplay=1&mute=1" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
